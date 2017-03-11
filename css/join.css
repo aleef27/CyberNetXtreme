@@ -1,0 +1,253 @@
+/* 1 - BASE FORM STYLES */
+body {
+  background: #141414;
+  margin: 0;
+  font-family: arial;
+}
+
+header {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .5em;
+  color: #fff;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover,nav a:focus {
+  color: #ddd;
+}
+
+}
+
+@media (min-width: 60rem) {
+
+  .logo {
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+}
+
+form {
+  margin: 20px;
+  color: #eee;
+}
+
+form p {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+
+/* 2 - RADIO STYLING BUTTON  */
+
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label[for="male"], label[for="female"] {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-left: 26px;
+  background: url(../img/checks.png) no-repeat;
+  background-position: 0 -32px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+input:checked + label[for="male"], input:checked + label[for="female"] {
+  background-position: 0 0;
+  color: #ff4500;
+}
+
+/* 3 - CHECKBOX STYLES  */
+
+input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label[for="top"],  label[for="mid"], label[for="marksman"],  label[for="support"], label[for="jungle"] {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 26px;
+    background: url(../img/checks.png) no-repeat;
+    background-position: 0 -98px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input:checked + label[for="top"],
+input:checked + label[for="mid"],
+input:checked + label[for="marksman"],
+input:checked + label[for="support"],
+input:checked + label[for="jungle"] {
+  background-position: 0 -65px;
+  color: #ff4500;
+}
+
+/* 4 - TEXT INPUT STYLES & FIELDSETS */
+
+fieldset {
+  padding: 20px;
+  margin: 20px 0;
+  border: 3px solid #222;
+}
+
+legend {
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+input[type="email"], input[type="telephone"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 50px;
+  border: 0;
+  border-radius: 4px;
+  background: url(../img/inputs.png) no-repeat;
+  background-color: #222;
+  font-size: 16px;
+  color: #fff;
+  float: left;
+  clear: both;
+}
+
+input[type="email"] {
+  background-position: 7px 8px;
+}
+
+input[type="telephone"] {
+  background-position: 7px -58px;
+}
+
+/* 5 - SELECT BOXES */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  margin: 30px 0;
+  padding: 10px 50px 10px 10px;
+  background: url(../img/select.png) no-repeat 95% center;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  width: 280px;
+}
+
+input[type="submit"] {
+  background: #ff4500;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  width: 280px;
+}
+
+/* 6 - INPUT VALIDATION STYLES */
+
+input[type="email"]:valid, input[type="telephone"]:valid {
+  border: 2px solid #fff;
+}
+
+input[type="email"]:valid {
+  background-position: 7px -22px;
+}
+
+input[type="telephone"]:valid {
+  background-position: 7px -97px;
+}
+
+input[type="email"]:valid + .tick,
+input[type="telephone"]:valid + .tick{
+  background: url(../img/tick.png) center;
+  background-size: 100%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px;
+}
+
+/*---------------footer---------------*/
+footer {
+  background: #000;
+  border-top: 3px solid #ff4500;
+  color: #fff;
+  padding: 2em 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+}
+footer a {
+  font-weight: 300;
+  font-size: 8px;
+}
+
+footer p {
+	font-weight: 400;
+	font-size: 11px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer nav:hover,footer nav:focus {
+  color: #ddd;
+}
+
+@media (min-width: 60rem) {
+  footer p {
+  	float: right;
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  footer nav {
+  	float: left;
+  }
+}
